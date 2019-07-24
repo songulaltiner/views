@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>views 文档</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <style>
+        .content {
+            padding: 0 15px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        iframe{
+            border: 2px #ddd dashed;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>时间轴</h1>
+    <iframe class="preview" src="views_timeline_iframe.html" frameborder="0" width="360" height="640"></iframe>
+    <div class="code">
+        <pre><code>&lt;section class=&quot;views-content&quot;&gt;
+    &lt;div class=&quot;views-timeline&quot;&gt;
+        &lt;div class=&quot;views-timeline-item-header&quot;&gt;2019年07月12日&lt;/div&gt;
+        &lt;div class=&quot;views-timeline-item&quot;&gt;
+            &lt;div class=&quot;views-timeline-item-label views-bg-info text-light&quot;&gt;05:20&lt;/div&gt;
+            &lt;div class=&quot;views-timeline-item-inner&quot;&gt;
+                &lt;div class=&quot;views-card-list&quot;&gt;
+                    &lt;div class=&quot;views-card-list-header&quot;&gt;
+                        &lt;div&gt;时间轴搭配卡片列表&lt;/div&gt;
+                        &lt;i class=&quot;views-iconfont views-icon-star views-text-danger&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;views-card-list-content-padded&quot;&gt;
+                        与卡片列表布局结合可以完成丰富的布局样式
+                        &lt;img src=&quot;../image/demo3.png&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;views-card-list-footer views-font-size-12&quot;&gt;
+                        &lt;div&gt;&lt;i class=&quot;views-iconfont views-icon-like views-font-size-14&quot;&gt;&lt;/i&gt; 666&lt;/div&gt;
+                        &lt;div&gt;&lt;i class=&quot;views-iconfont views-icon-comment views-font-size-14&quot;&gt;&lt;/i&gt; 888&lt;/div&gt;
+                        &lt;div&gt;&lt;i class=&quot;views-iconfont views-icon-star views-font-size-14&quot;&gt;&lt;/i&gt; 888&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;views-timeline-item&quot;&gt;
+            &lt;div class=&quot;views-timeline-item-label-icon views-bg-danger&quot;&gt;
+                &lt;i class=&quot;views-iconfont views-icon-like text-light&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;views-timeline-item-inner&quot;&gt;
+                &lt;div class=&quot;views-card-list&quot;&gt;
+                    &lt;div class=&quot;views-card-list-content-padded&quot;&gt;
+                        APICloud是App混合开发平台，致力于方便开发者及企业体验混合开发的乐趣，加快应用迭代，降低成本。
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;views-timeline-item&quot;&gt;
+            &lt;div class=&quot;views-timeline-item-label views-bg-warning text-light&quot;&gt;09:00&lt;/div&gt;
+            &lt;div class=&quot;views-timeline-item-inner&quot;&gt;
+                &lt;div class=&quot;views-card-list&quot;&gt;
+                    &lt;div class=&quot;views-card-list-header&quot;&gt;更多的组合模式&lt;/div&gt;
+                    &lt;div class=&quot;views-card-list-content-padded&quot;&gt;
+                        &lt;div class=&quot;views-row views-row-padded&quot;&gt;
+                            &lt;div class=&quot;views-col-xs-4&quot;&gt;
+                                &lt;img src=&quot;../image/demo1.png&quot;/&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;views-col-xs-4&quot;&gt;
+                                &lt;img src=&quot;../image/demo2.png&quot;/&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;views-col-xs-4&quot;&gt;
+                                &lt;img src=&quot;../image/demo3.png&quot;/&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;views-timeline-item&quot;&gt;
+            &lt;div class=&quot;views-timeline-item-label views-bg-success text-light&quot;&gt;18:30&lt;/div&gt;
+            &lt;div class=&quot;views-timeline-item-inner&quot;&gt;
+                &lt;div class=&quot;views-card-list&quot;&gt;
+                    &lt;div class=&quot;views-card-list-header &quot;&gt;更多的组合模式&lt;/div&gt;
+                    &lt;div class=&quot;views-card-list-content&quot;&gt;
+                        &lt;ul class=&quot;views-list views-list-in views-media-list views-list-noborder&quot;&gt;
+                            &lt;li class=&quot;views-list-item views-list-item-middle&quot;&gt;
+                                &lt;div class=&quot;views-media-list-item-inner&quot;&gt;
+                                    &lt;div class=&quot;views-list-item-media&quot; style=&quot;width: 2.6rem;&quot;&gt;
+                                        &lt;img src=&quot;../image/demo1.png&quot; class=&quot;views-img-round&quot;&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;views-list-item-inner views-list-item-arrow&quot;&gt;
+                                        &lt;div class=&quot;views-list-item-text&quot;&gt;
+                                            &lt;div class=&quot;views-list-item-title views-font-size-14&quot;&gt;APICloud&lt;/div&gt;
+                                            &lt;div class=&quot;views-list-item-right&quot;&gt;05:20&lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;views-list-item-text&quot;&gt;
+                                            www.apicloud.com
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;views-list-item views-list-item-middle&quot;&gt;
+                                &lt;div class=&quot;views-media-list-item-inner&quot;&gt;
+                                    &lt;div class=&quot;views-list-item-media&quot; style=&quot;width: 2.6rem;&quot;&gt;
+                                        &lt;img src=&quot;../image/demo2.png&quot; class=&quot;views-img-round&quot;&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class=&quot;views-list-item-inner views-list-item-arrow&quot;&gt;
+                                        APICloud
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;views-card-list-footer views-text-center&quot;&gt;
+                        查看更多
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../js/api.js"></script>
+<script type="text/javascript" src="../js/highlight.pack.js"></script>
+<script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+
+
+</script>
+</html>

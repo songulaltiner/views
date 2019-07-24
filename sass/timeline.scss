@@ -1,0 +1,59 @@
+
+.#{$namespace}timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1.85rem;
+    width: 2px;
+    height: 100%;
+    background: #ececec;
+    z-index: 0;
+  }
+  .#{$namespace}timeline-item {
+    position: relative;
+    margin-bottom: 0.75rem;
+  }
+  .#{$namespace}timeline-item-header {
+    background-color: #ececec;
+    padding: 0.2rem 0.5rem;
+    margin: 0.75rem;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    font-size: 0.7rem;
+  }
+  .#{$namespace}timeline-item-label {
+    width: 2.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 0.7em;
+    background-color: #ececec;
+    position: absolute;
+    text-align: center;
+    left: 0.75rem;
+    top: 0;
+  }
+  .#{$namespace}timeline-item-label-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    background-color: #ececec;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    left: 1.15rem;
+    top: 0;
+  }
+  .#{$namespace}timeline-item-inner {
+    margin-left: 3.75rem;
+    margin-right: 0.75rem;
+    padding: 0;
+    position: relative;
+  }
+}

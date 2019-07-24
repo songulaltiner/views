@@ -1,0 +1,687 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "#{$namespace}iconfont";
+  src: url('#{$namespace}iconfont.ttf') format("truetype");
+}
+
+@function unicode($str) {
+  @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+}
+
+.#{$namespace}iconfont {
+  position: relative;
+  font-family: "#{$namespace}iconfont" !important;
+  font-size: 0.9rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.#{$namespace}icon-warning-circle:before {
+  content: unicode("e785");
+}
+
+.#{$namespace}icon-sync:before {
+  content: unicode("e786");
+}
+
+.#{$namespace}icon-undo:before {
+  content: unicode("e787");
+}
+
+.#{$namespace}icon-redo:before {
+  content: unicode("e788");
+}
+
+.#{$namespace}icon-message:before {
+  content: unicode("e78a");
+}
+
+.#{$namespace}icon-poweroff:before {
+  content: unicode("e78c");
+}
+
+.#{$namespace}icon-logout:before {
+  content: unicode("e78d");
+}
+
+.#{$namespace}icon-piechart:before {
+  content: unicode("e78e");
+}
+
+.#{$namespace}icon-setting:before {
+  content: unicode("e78f");
+}
+
+.#{$namespace}icon-eye:before {
+  content: unicode("e790");
+}
+
+.#{$namespace}icon-location:before {
+  content: unicode("e791");
+}
+
+.#{$namespace}icon-edit-square:before {
+  content: unicode("e792");
+}
+
+.#{$namespace}icon-appstore:before {
+  content: unicode("e793");
+}
+
+.#{$namespace}icon-detail:before {
+  content: unicode("e794");
+}
+
+.#{$namespace}icon-adduser:before {
+  content: unicode("e7ae");
+}
+
+.#{$namespace}icon-deleteteam:before {
+  content: unicode("e7af");
+}
+
+.#{$namespace}icon-deleteuser:before {
+  content: unicode("e7b0");
+}
+
+.#{$namespace}icon-addteam:before {
+  content: unicode("e7b1");
+}
+
+.#{$namespace}icon-user:before {
+  content: unicode("e7b2");
+}
+
+.#{$namespace}icon-team:before {
+  content: unicode("e7b3");
+}
+
+.#{$namespace}icon-areachart:before {
+  content: unicode("e7b4");
+}
+
+.#{$namespace}icon-linechart:before {
+  content: unicode("e7b5");
+}
+
+.#{$namespace}icon-mobile:before {
+  content: unicode("e7b6");
+}
+
+.#{$namespace}icon-redenvelope:before {
+  content: unicode("e7b7");
+}
+
+.#{$namespace}icon-book:before {
+  content: unicode("e7b8");
+}
+
+.#{$namespace}icon-delete:before {
+  content: unicode("e7c3");
+}
+
+.#{$namespace}icon-bell:before {
+  content: unicode("e7c4");
+}
+
+.#{$namespace}icon-skin:before {
+  content: unicode("e7c5");
+}
+
+.#{$namespace}icon-home:before {
+  content: unicode("e7c6");
+}
+
+.#{$namespace}icon-bank:before {
+  content: unicode("e7c7");
+}
+
+.#{$namespace}icon-filter:before {
+  content: unicode("e7c8");
+}
+
+.#{$namespace}icon-like:before {
+  content: unicode("e7c9");
+}
+
+.#{$namespace}icon-unlike:before {
+  content: unicode("e7ca");
+}
+
+.#{$namespace}icon-unlock:before {
+  content: unicode("e7cb");
+}
+
+.#{$namespace}icon-lock:before {
+  content: unicode("e7cc");
+}
+
+.#{$namespace}icon-customerservice:before {
+  content: unicode("e7cd");
+}
+
+.#{$namespace}icon-flag:before {
+  content: unicode("e7ce");
+}
+
+.#{$namespace}icon-moneycollect:before {
+  content: unicode("e7cf");
+}
+
+.#{$namespace}icon-shop:before {
+  content: unicode("e7d0");
+}
+
+.#{$namespace}icon-shopping:before {
+  content: unicode("e7d1");
+}
+
+.#{$namespace}icon-calendar-check:before {
+  content: unicode("e7d3");
+}
+
+.#{$namespace}icon-calendar:before {
+  content: unicode("e7d4");
+}
+
+.#{$namespace}icon-scan:before {
+  content: unicode("e7d5");
+}
+
+.#{$namespace}icon-barcode:before {
+  content: unicode("e7d7");
+}
+
+.#{$namespace}icon-camera:before {
+  content: unicode("e7d8");
+}
+
+.#{$namespace}icon-cloud-upload:before {
+  content: unicode("e7d9");
+}
+
+.#{$namespace}icon-cloud-download:before {
+  content: unicode("e7da");
+}
+
+.#{$namespace}icon-qrcode:before {
+  content: unicode("e7dd");
+}
+
+.#{$namespace}icon-image:before {
+  content: unicode("e7de");
+}
+
+.#{$namespace}icon-mail:before {
+  content: unicode("e7df");
+}
+
+.#{$namespace}icon-idcard:before {
+  content: unicode("e7e0");
+}
+
+.#{$namespace}icon-heart:before {
+  content: unicode("e7e1");
+}
+
+.#{$namespace}icon-error:before {
+  content: unicode("e7e2");
+}
+
+.#{$namespace}icon-star:before {
+  content: unicode("e7e3");
+}
+
+.#{$namespace}icon-wifi:before {
+  content: unicode("e7e4");
+}
+
+.#{$namespace}icon-edit:before {
+  content: unicode("e7e5");
+}
+
+.#{$namespace}icon-man:before {
+  content: unicode("e7e6");
+}
+
+.#{$namespace}icon-pushpin:before {
+  content: unicode("e7e7");
+}
+
+.#{$namespace}icon-phone:before {
+  content: unicode("e7e8");
+}
+
+.#{$namespace}icon-tag:before {
+  content: unicode("e7e9");
+}
+
+.#{$namespace}icon-tags:before {
+  content: unicode("e7ea");
+}
+
+.#{$namespace}icon-scissor:before {
+  content: unicode("e7eb");
+}
+
+.#{$namespace}icon-share:before {
+  content: unicode("e7ec");
+}
+
+.#{$namespace}icon-verticalright:before {
+  content: unicode("e7ed");
+}
+
+.#{$namespace}icon-verticalleft:before {
+  content: unicode("e7ee");
+}
+
+.#{$namespace}icon-right:before {
+  content: unicode("e7ef");
+}
+
+.#{$namespace}icon-left:before {
+  content: unicode("e7f0");
+}
+
+.#{$namespace}icon-up:before {
+  content: unicode("e7f1");
+}
+
+.#{$namespace}icon-down:before {
+  content: unicode("e7f2");
+}
+
+.#{$namespace}icon-fullscreen:before {
+  content: unicode("e7f3");
+}
+
+.#{$namespace}icon-fullscreen-exit:before {
+  content: unicode("e7f4");
+}
+
+.#{$namespace}icon-doubleleft:before {
+  content: unicode("e7f5");
+}
+
+.#{$namespace}icon-doubleright:before {
+  content: unicode("e7f6");
+}
+
+.#{$namespace}icon-arrowright:before {
+  content: unicode("e7f7");
+}
+
+.#{$namespace}icon-arrowup:before {
+  content: unicode("e7f8");
+}
+
+.#{$namespace}icon-arrowleft:before {
+  content: unicode("e7f9");
+}
+
+.#{$namespace}icon-arrowdown:before {
+  content: unicode("e7fa");
+}
+
+.#{$namespace}icon-upload:before {
+  content: unicode("e7fb");
+}
+
+.#{$namespace}icon-download:before {
+  content: unicode("e7fc");
+}
+
+.#{$namespace}icon-sort-descending:before {
+  content: unicode("e7fd");
+}
+
+.#{$namespace}icon-sort-ascending:before {
+  content: unicode("e7fe");
+}
+
+.#{$namespace}icon-swap:before {
+  content: unicode("e7ff");
+}
+
+.#{$namespace}icon-menu:before {
+  content: unicode("e800");
+}
+
+.#{$namespace}icon-unorderedlist:before {
+  content: unicode("e801");
+}
+
+.#{$namespace}icon-orderedlist:before {
+  content: unicode("e802");
+}
+
+.#{$namespace}icon-check:before {
+  content: unicode("e803");
+}
+
+.#{$namespace}icon-ellipsis:before {
+  content: unicode("e804");
+}
+
+.#{$namespace}icon-close:before {
+  content: unicode("e805");
+}
+
+.#{$namespace}icon-minus:before {
+  content: unicode("e806");
+}
+
+.#{$namespace}icon-question:before {
+  content: unicode("e807");
+}
+
+.#{$namespace}icon-small-dash:before {
+  content: unicode("e808");
+}
+
+.#{$namespace}icon-pause:before {
+  content: unicode("e809");
+}
+
+.#{$namespace}icon-drag:before {
+  content: unicode("e842");
+}
+
+.#{$namespace}icon-gift:before {
+  content: unicode("e843");
+}
+
+.#{$namespace}icon-stop:before {
+  content: unicode("e844");
+}
+
+.#{$namespace}icon-warning-circle-fill:before {
+  content: unicode("e848");
+}
+
+.#{$namespace}icon-heart-fill:before {
+  content: unicode("e849");
+}
+
+.#{$namespace}icon-message-fill:before {
+  content: unicode("e84a");
+}
+
+.#{$namespace}icon-mobile-fill:before {
+  content: unicode("e854");
+}
+
+.#{$namespace}icon-book-fill:before {
+  content: unicode("e855");
+}
+
+.#{$namespace}icon-redenvelope-fill:before {
+  content: unicode("e856");
+}
+
+.#{$namespace}icon-calendar-check-fill:before {
+  content: unicode("e860");
+}
+
+.#{$namespace}icon-image-fill:before {
+  content: unicode("e861");
+}
+
+.#{$namespace}icon-idcard-fill:before {
+  content: unicode("e862");
+}
+
+.#{$namespace}icon-creditcard-fill:before {
+  content: unicode("e863");
+}
+
+.#{$namespace}icon-delete-fill:before {
+  content: unicode("e864");
+}
+
+.#{$namespace}icon-shopping-fill:before {
+  content: unicode("e865");
+}
+
+.#{$namespace}icon-bell-fill:before {
+  content: unicode("e866");
+}
+
+.#{$namespace}icon-filter-fill:before {
+  content: unicode("e867");
+}
+
+.#{$namespace}icon-gift-fill:before {
+  content: unicode("e868");
+}
+
+.#{$namespace}icon-home-fill:before {
+  content: unicode("e869");
+}
+
+.#{$namespace}icon-location-fill:before {
+  content: unicode("e86a");
+}
+
+.#{$namespace}icon-eye-fill:before {
+  content: unicode("e86b");
+}
+
+.#{$namespace}icon-like-fill:before {
+  content: unicode("e86c");
+}
+
+.#{$namespace}icon-unlike-fill:before {
+  content: unicode("e86d");
+}
+
+.#{$namespace}icon-star-fill:before {
+  content: unicode("e86e");
+}
+
+.#{$namespace}icon-unlock-fill:before {
+  content: unicode("e86f");
+}
+
+.#{$namespace}icon-phone-fill:before {
+  content: unicode("e870");
+}
+
+.#{$namespace}icon-edit-fill:before {
+  content: unicode("e871");
+}
+
+.#{$namespace}icon-thunderbolt-fill:before {
+  content: unicode("e872");
+}
+
+.#{$namespace}icon-tag-fill:before {
+  content: unicode("e873");
+}
+
+.#{$namespace}icon-tags-fill:before {
+  content: unicode("e874");
+}
+
+.#{$namespace}icon-camera-fill:before {
+  content: unicode("e875");
+}
+
+.#{$namespace}icon-error-fill:before {
+  content: unicode("e876");
+}
+
+.#{$namespace}icon-setting-fill:before {
+  content: unicode("e877");
+}
+
+.#{$namespace}icon-alipay:before {
+  content: unicode("e87c");
+}
+
+.#{$namespace}icon-QQ:before {
+  content: unicode("e882");
+}
+
+.#{$namespace}icon-weibo:before {
+  content: unicode("e883");
+}
+
+.#{$namespace}icon-wechat-fill:before {
+  content: unicode("e884");
+}
+
+.#{$namespace}icon-alipay-circle-fill:before {
+  content: unicode("e885");
+}
+
+.#{$namespace}icon-QQ-circle-fill:before {
+  content: unicode("e887");
+}
+
+.#{$namespace}icon-weibo-circle-fill:before {
+  content: unicode("e88a");
+}
+
+.#{$namespace}icon-alipay-square-fill:before {
+  content: unicode("e88c");
+}
+
+.#{$namespace}icon-QQ-square-fill:before {
+  content: unicode("e890");
+}
+
+.#{$namespace}icon-weibo-square-fill:before {
+  content: unicode("e892");
+}
+
+.#{$namespace}icon-zoomout:before {
+  content: unicode("e897");
+}
+
+.#{$namespace}icon-audio:before {
+  content: unicode("e898");
+}
+
+.#{$namespace}icon-audio-fill:before {
+  content: unicode("e899");
+}
+
+.#{$namespace}icon-zoomin:before {
+  content: unicode("e89a");
+}
+
+.#{$namespace}icon-audiostatic:before {
+  content: unicode("e8e8");
+}
+
+.#{$namespace}icon-comment:before {
+  content: unicode("e8e9");
+}
+
+.#{$namespace}icon-signal-fill:before {
+  content: unicode("e8ea");
+}
+
+.#{$namespace}icon-switchuser:before {
+  content: unicode("e8eb");
+}
+
+.#{$namespace}icon-caret-down:before {
+  content: unicode("e8ec");
+}
+
+.#{$namespace}icon-backward:before {
+  content: unicode("e8ed");
+}
+
+.#{$namespace}icon-caret-up:before {
+  content: unicode("e8ee");
+}
+
+.#{$namespace}icon-caret-right:before {
+  content: unicode("e8ef");
+}
+
+.#{$namespace}icon-caret-left:before {
+  content: unicode("e8f0");
+}
+
+.#{$namespace}icon-fast-backward:before {
+  content: unicode("e8f1");
+}
+
+.#{$namespace}icon-forward:before {
+  content: unicode("e8f2");
+}
+
+.#{$namespace}icon-fast-forward:before {
+  content: unicode("e8f3");
+}
+
+.#{$namespace}icon-search:before {
+  content: unicode("e8f4");
+}
+
+.#{$namespace}icon-step-backward:before {
+  content: unicode("e8f5");
+}
+
+.#{$namespace}icon-step-forward:before {
+  content: unicode("e8f6");
+}
+
+.#{$namespace}icon-woman:before {
+  content: unicode("e8f7");
+}
+
+.#{$namespace}icon-plus:before {
+  content: unicode("e8fe");
+}
+
+.#{$namespace}icon-eyeclose-fill:before {
+  content: unicode("e8ff");
+}
+
+.#{$namespace}icon-eye-close:before {
+  content: unicode("e900");
+}
+
+.#{$namespace}icon-clear:before {
+  content: unicode("e901");
+}
+
+.#{$namespace}icon-translate:before {
+  content: unicode("e902");
+}
+
+.#{$namespace}icon-compress:before {
+  content: unicode("e914");
+}
+
+.#{$namespace}icon-expend:before {
+  content: unicode("e915");
+}
+
+.#{$namespace}icon-send:before {
+  content: unicode("e916");
+}
+
+.#{$namespace}icon-cart:before {
+  content: unicode("e6af");
+}
+
+.#{$namespace}icon-cartfill:before {
+  content: unicode("e6b9");
+}
+
+.#{$namespace}icon-cart_light:before {
+  content: unicode("e7d6");
+}
+
+.#{$namespace}icon-cart_fill_light:before {
+  content: unicode("e7db");
+}

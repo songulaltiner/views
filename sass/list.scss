@@ -1,0 +1,430 @@
+
+.#{$namespace}list {
+  position: relative;
+  font-size: 0.8rem;
+  background-color: #ffffff;
+  &:before{
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #ddd;
+    top: -1px;
+  }
+  &:after{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #ddd;
+  }
+  .#{$namespace}content {
+    overflow: hidden;
+  }
+  &.#{$namespace}list-noborder {
+    &:before,&:after{
+      height: 0;
+    }
+  }
+
+  .#{$namespace}list-item {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 0.75rem;
+    color: $black-85;
+    position: relative;
+    min-height: 2.25rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
+    &:after{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      content: '';
+      -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+      background-color: #ddd;
+    }
+  }
+  &.#{$namespace}list-in .#{$namespace}list-item {
+    &:after{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: .75rem;
+      height: 1px;
+      content: '';
+      -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+      background-color: #ddd;
+    }
+    &:last-child:after{
+      height: 0;
+    }
+  }
+  .#{$namespace}list-item-inner {
+    position: relative;
+    min-height: 2.25rem;
+    padding-right: 0.75rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .#{$namespace}list-item:active {
+    background-color: #fff;
+  }
+  .#{$namespace}list-item-text {
+    font-size: 0.7rem;
+    color: $black-45;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .#{$namespace}list-item-title {
+    font-size: 0.8rem;
+    position: relative;
+    max-width: 100%;
+    color: $black-85;
+  }
+  .#{$namespace}list-item-right {
+    max-width: 50%;
+    position: relative;
+    font-size: 0.6rem;
+    color: $black-45;
+    margin-left: 0.25rem;
+  }
+}
+
+.#{$namespace}list-item-title-row em {
+  max-width: 50%;
+  position: relative;
+  font-size: 0.6rem;
+  color: $black-45;
+  margin-left: 0.25rem;
+}
+
+.#{$namespace}list {
+  .#{$namespace}list-item-inner p {
+    overflow: hidden;
+  }
+  .#{$namespace}list-media-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.#{$namespace}media-list-item-inner {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.#{$namespace}media-list {
+  .#{$namespace}list-item {
+    display: block;
+  }
+  .#{$namespace}list-item-inner {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.#{$namespace}media-list-item-inner + .#{$namespace}info {
+  margin-right: 0.75rem;
+}
+
+.#{$namespace}list {
+  .#{$namespace}list-item-media {
+    width: 4.5rem;
+    position: relative;
+    padding: 0.5rem 0;
+    padding-right: 0.75rem;
+    display: inherit;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .#{$namespace}list-item-media-list {
+    margin-top: 0.25rem;
+    padding-right: 0;
+    display: block;
+  }
+  [class*=#{$namespace}col-xs-] img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+
+.#{$namespace}list-item-middle .#{$namespace}list-item-inner:after {
+  display: block;
+}
+
+.#{$namespace}list {
+  .#{$namespace}list-item-middle > {
+    .#{$namespace}list-item-media, .#{$namespace}list-item-inner, * {
+      -webkit-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  }
+  .#{$namespace}list-item-center {
+    > {
+      .#{$namespace}list-item-media, .#{$namespace}list-item-inner {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+      }
+    }
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .#{$namespace}list-item i.#{$namespace}iconfont {
+    -webkit-align-self: center;
+    align-self: center;
+    font-size: 0.8rem;
+  }
+}
+
+.#{$namespace}list-item-inner.#{$namespace}list-item-arrow {
+  overflow: hidden;
+  padding-right: 1.5rem;
+}
+
+.#{$namespace}list-item-arrow:before {
+  content: '';
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  margin-top: -0.2rem;
+  background: transparent;
+  border: 1px solid #c7c7c7;
+  border-top: none;
+  border-right: none;
+  z-index: 2;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.#{$namespace}list-item.#{$namespace}list-item-arrow {
+  padding-right: 0.75rem;
+}
+
+.#{$namespace}list {
+  label {
+    line-height: 1.2rem;
+  }
+  &.#{$namespace}form-list {
+    .#{$namespace}list-item:active {
+      background-color: #ffffff;
+    }
+    .#{$namespace}list-item-inner {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      padding: 0;
+    }
+  }
+  .#{$namespace}list-item-label {
+    color: $black-85;
+    width: 35%;
+    min-width: 1.5rem;
+    margin: 0;
+    padding: 0;
+    padding-right: 0.25rem;
+    line-height: 2.2rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .#{$namespace}list-item-label-icon {
+    color: $black-85;
+    width: 35%;
+    min-width: 1.5rem;
+    margin: 0;
+    padding: 0;
+    padding-right: 0.25rem;
+    line-height: 2.2rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: auto;
+    padding-right: 0.75rem;
+  }
+  .#{$namespace}list-item-input {
+    width: 100%;
+    padding: 0;
+    padding-right: 0.75rem;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+  }
+  &.#{$namespace}select-list {
+    .#{$namespace}list-item:active {
+      background-color: #ffffff;
+    }
+    .#{$namespace}list-item-inner {
+      display: block;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      -webkit-align-self: stretch;
+      align-self: stretch;
+    }
+    .#{$namespace}list-item-label {
+      width: auto;
+      min-width: 2.2rem;
+      padding: 0.5rem 0;
+      padding-right: 0.75rem;
+    }
+  }
+  &.#{$namespace}form-list .#{$namespace}list-item-btn {
+    padding: 0.75rem 0.75rem 0.75rem 0;
+  }
+  textarea {
+    overflow: auto;
+    margin: 0.5rem 0;
+    height: 3rem;
+    line-height: 1rem;
+    resize: none;
+  }
+  .#{$namespace}list-item-right {
+    .#{$namespace}badge, .#{$namespace}dot {
+      display: inherit;
+    }
+  }
+}
+
+.#{$namespace}info {
+  position: relative;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  color: $black-45;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.#{$namespace}info-item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  > * {
+    display: inherit;
+    position: relative;
+  }
+}
+
+.#{$namespace}info > * {
+  display: inherit;
+  position: relative;
+}
+.#{$namespace}tips {
+  padding: 0 0.75rem;
+  width: 100%;
+  z-index: 99;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  position: relative;
+  background-color: rgba(253,252,236,1);
+  color: rgba(248,110,33,1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  .#{$namespace}tips-title {
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+    position: relative;
+    max-width: 100%;
+  }
+}

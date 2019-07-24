@@ -1,0 +1,129 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+h1, .#{$namespace}h1 {
+  font-size: 1.2rem;
+}
+
+h2, .#{$namespace}h2 {
+  font-size: 1rem;
+}
+
+h3, .#{$namespace}h3 {
+  font-size: .8rem;
+}
+
+h4, .#{$namespace}h4 {
+  font-size: .7rem;
+}
+
+h5, .#{$namespace}h5 {
+  font-size: .7rem;
+  color: #888;
+  font-weight: normal;
+}
+
+h6, .#{$namespace}h6 {
+  font-size: .7rem;
+  color: #888;
+  font-weight: normal;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #888;
+}
+
+h1 small, h2 small, h3 small {
+  font-size: 65%;
+}
+
+h4 small, h5 small, h6 small {
+  font-size: 75%;
+}
+
+
+.#{$namespace}font-size-12 {
+  font-size: 0.6rem !important;
+}
+
+.#{$namespace}font-size-14 {
+  font-size: 0.7rem !important;
+}
+
+.#{$namespace}font-size-16 {
+  font-size: 0.8rem !important;
+}
+
+.#{$namespace}font-size-18 {
+  font-size: 0.9rem !important;
+}
+
+.#{$namespace}font-size-20 {
+  font-size: 1rem !important;
+}
+
+.#{$namespace}text-default {
+  color: #212121 !important;
+}
+
+.#{$namespace}text-white {
+  color: $white-100 !important;
+}
+
+.#{$namespace}bg-default {
+  background-color: $default-bg !important;
+}
+
+.#{$namespace}bg-primary {
+  background-color: $primary-color !important;
+}
+
+.#{$namespace}bg-positive {
+  background-color: $positive-color;
+}
+
+.#{$namespace}bg-negative {
+  background-color: $negative-color;
+}
+
+.#{$namespace}black-85{ color:rgba(0,0,0,.85);}
+.#{$namespace}black-65{ color:rgba(0,0,0,.65);}
+.#{$namespace}black-45{ color:rgba(0,0,0,.45);}
+.#{$namespace}black-25{ color:rgba(0,0,0,.25);}
+.#{$namespace}black-15{ color:rgba(0,0,0,.15);}
+.#{$namespace}black-9{ color:rgba(0,0,0,.09);}
+.#{$namespace}black-4{ color:rgba(0,0,0,.04);}
+.#{$namespace}black-2{ color:rgba(0,0,0,.02);}
+
+.#{$namespace}white-100{ color:rgba(255,255,255,1);}
+.#{$namespace}white-85{ color:rgba(255,255,255,.85);}
+.#{$namespace}white-65{ color:rgba(255,255,255,.65);}
+.#{$namespace}white-45{ color:rgba(255,255,255,.45);}
+.#{$namespace}white-25{ color:rgba(255,255,255,.25);}
+.#{$namespace}white-15{ color:rgba(255,255,255,.15);}
+.#{$namespace}white-9{ color:rgba(255,255,255,.09);}
+.#{$namespace}white-4{ color:rgba(255,255,255,.04);}
+
+
+/*警告、成功颜色*/
+.#{$namespace}warning {
+  color: #e51c23 !important;
+
+  label, .#{$namespace}input, .#{$namespace}iconfont {
+    color: #e51c23 !important;
+  }
+}
+
+.#{$namespace}success {
+  color: #009688 !important;
+
+  label, .#{$namespace}input, .#{$namespace}iconfont {
+    color: #009688 !important;
+  }
+}

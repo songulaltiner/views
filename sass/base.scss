@@ -1,0 +1,394 @@
+html {
+  font-family: $font-family-default;
+  font-size: 20px;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  width: 100%;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  color: $black-85;
+  background-color: $default-bg;
+  outline: 0;
+}
+
+html, body, header, section, footer, div, ul, ol, li, img, a, span, em, del, legend, center, strong, var, fieldset, form, label, dl, dt, dd, cite, input, hr, time, mark, code, figcaption, figure, textarea, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 21.33333333px !important;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 21px !important;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+
+ul, li {
+  list-style: none;
+}
+
+p {
+  font-size: 0.7rem;
+  color: #888;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  background-color: transparent;
+
+  &:active {
+    color: darken($primary-color, 10%);
+  }
+}
+
+textarea {
+  overflow: hidden;
+  resize: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/*自动隐藏文字*/
+
+.#{$namespace}ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.#{$namespace}ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.#{$namespace}padded-0 {
+  padding: 0 !important;
+}
+
+.#{$namespace}padded-5 {
+  padding: 0.25rem !important;
+}
+
+.#{$namespace}padded-10 {
+  padding: 0.5rem !important;
+}
+
+.#{$namespace}padded-15 {
+  padding: 0.75rem !important;
+}
+
+.#{$namespace}padded-t-0 {
+  padding-top: 0 !important;
+}
+
+.#{$namespace}padded-t-5 {
+  padding-top: 0.25rem !important;
+}
+
+.#{$namespace}padded-t-10 {
+  padding-top: 0.5rem !important;
+}
+
+.#{$namespace}padded-t-15 {
+  padding-top: 0.75rem !important;
+}
+
+.#{$namespace}padded-b-0 {
+  padding-bottom: 0 !important;
+}
+
+.#{$namespace}padded-b-5 {
+  padding-bottom: 0.25rem !important;
+}
+
+.#{$namespace}padded-b-10 {
+  padding-bottom: 0.5rem !important;
+}
+
+.#{$namespace}padded-b-15 {
+  padding-bottom: 0.75rem !important;
+}
+
+.#{$namespace}padded-l-0 {
+  padding-left: 0 !important;
+}
+
+.#{$namespace}padded-l-5 {
+  padding-left: 0.25rem !important;
+}
+
+.#{$namespace}padded-l-10 {
+  padding-left: 0.5rem !important;
+}
+
+.#{$namespace}padded-l-15 {
+  padding-left: 0.75rem !important;
+}
+
+.#{$namespace}padded-r-0 {
+  padding-right: 0 !important;
+}
+
+.#{$namespace}padded-r-5 {
+  padding-right: 0.25rem !important;
+}
+
+.#{$namespace}padded-r-10 {
+  padding-right: 0.5rem !important;
+}
+
+.#{$namespace}padded-r-15 {
+  padding-right: 0.75rem !important;
+}
+
+.#{$namespace}margin-0 {
+  margin: 0 !important;
+}
+
+.#{$namespace}margin-5 {
+  margin: 0.25rem !important;
+}
+
+.#{$namespace}margin-10 {
+  margin: 0.5rem !important;
+}
+
+.#{$namespace}margin-15 {
+  margin: 0.75rem !important;
+}
+
+.#{$namespace}margin-t-0 {
+  margin-top: 0 !important;
+}
+
+.#{$namespace}margin-t-5 {
+  margin-top: 0.25rem !important;
+}
+
+.#{$namespace}margin-t-10 {
+  margin-top: 0.5rem !important;
+}
+
+.#{$namespace}margin-t-15 {
+  margin-top: 0.75rem !important;
+}
+
+.#{$namespace}margin-b-0 {
+  margin-bottom: 0 !important;
+}
+
+.#{$namespace}margin-b-5 {
+  margin-bottom: 0.25rem !important;
+}
+
+.#{$namespace}margin-b-10 {
+  margin-bottom: 0.5rem !important;
+}
+
+.#{$namespace}margin-b-15 {
+  margin-bottom: 0.75rem !important;
+}
+
+.#{$namespace}margin-l-0 {
+  margin-left: 0 !important;
+}
+
+.#{$namespace}margin-l-5 {
+  margin-left: 0.25rem !important;
+}
+
+.#{$namespace}margin-l-10 {
+  margin-left: 0.5rem !important;
+}
+
+.#{$namespace}margin-l-15 {
+  margin-left: 0.75rem !important;
+}
+
+.#{$namespace}margin-r-0 {
+  margin-right: 0 !important;
+}
+
+.#{$namespace}margin-r-5 {
+  margin-right: 0.25rem !important;
+}
+
+.#{$namespace}margin-r-10 {
+  margin-right: 0.5rem !important;
+}
+
+.#{$namespace}margin-r-15 {
+  margin-right: 0.75rem !important;
+}
+
+.#{$namespace}clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.#{$namespace}table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.#{$namespace}table-cell {
+  display: table-cell;
+  position: relative;
+}
+
+.#{$namespace}text-left {
+  text-align: left !important;
+}
+
+.#{$namespace}text-center {
+  text-align: center !important;
+}
+
+.#{$namespace}text-justify {
+  text-align: justify !important;
+}
+
+.#{$namespace}text-right {
+  text-align: right !important;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+img.#{$namespace}img-round {
+  border-radius: 50%;
+}
+
+.#{$namespace}pull-right {
+  float: right !important;
+}
+
+.#{$namespace}pull-left {
+  float: left !important;
+}
+
+.#{$namespace}hide {
+  display: none !important;
+}
+
+.#{$namespace}show {
+  display: block !important;
+}
+
+.#{$namespace}invisible {
+  visibility: hidden;
+}
+
+.#{$namespace}inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.#{$namespace}mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: 99;
+  visibility: hidden;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s;
+
+  &.#{$namespace}mask-in {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.#{$namespace}mask-out {
+    opacity: 0;
+  }
+}
+
+
+.#{$namespace}scroll-x {
+  position: relative;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.#{$namespace}scroll-y {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+.#{$namespace}content {
+  -webkit-overflow-scrolling: touch;
+  word-break: break-all;
+}
+

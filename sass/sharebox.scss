@@ -1,0 +1,44 @@
+//TODO 这个后期有必要完善
+.#{$namespace}sharebox {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+
+  .#{$namespace}row {
+    padding: 0.5rem 0;
+  }
+
+  img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &.#{$namespace}grid {
+    [class*=#{$namespace}col-] {
+      padding: 0.5rem 0;
+    }
+
+    .#{$namespace}grid-label {
+      font-size: 0.6rem;
+      color: #757575;
+    }
+  }
+}
+
+.#{$namespace}sharebox-close-btn {
+  width: 100%;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  color: #757575;
+  text-align: center;
+  font-size: 0.7rem;
+}

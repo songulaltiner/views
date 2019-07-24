@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>views 文档</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        html, body {
+            height: 100%;
+            background: white;
+            font-size: 20px;
+        }
+
+        header {
+            height: 2.25rem;
+            line-height: 2.25rem;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            padding: 0 .75rem;
+            font-size: .8rem;
+        }
+
+        .flex-content {
+            display: flex;
+            height: calc(100% - 2.25rem);
+        }
+
+        .content {
+            word-break: break-all;
+            -webkit-overflow-scrolling: touch;
+            overflow-y: auto;
+        }
+
+        .left {
+            flex: 2.5;
+            height: 100%;
+            border-right: 1px solid #ddd;
+        }
+
+        .right {
+            flex: 7.5;
+            height: 100%;
+        }
+
+        .title-name {
+            padding: .5rem .75rem;
+            font-size: .8rem;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .active {
+            color: white;
+            background: #9ac200 !important;
+        }
+
+        .move-active {
+            background: rgba(154, 194, 0, 0.4);
+            color: white;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-title">Views UI框架</div>
+</header>
+<section class="flex-content" v-cloak>
+    <div class="content left">
+        <div class="title-name" :class="{active: index===0}"
+             v-for="(item,index) in list"
+             @click="activeClick(item.url,$event)"
+             @mouseover="changeActive($event)"
+             @mouseout="removeActive($event)">{{item.name}}
+        </div>
+    </div>
+    <iframe :src="list[0].url" class="right" frameborder="0"></iframe>
+</section>
+</body>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/api.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+    new Vue({
+        el: '.flex-content',
+        data: {
+            list: templete
+        },
+        methods: {
+            changeActive($event) {
+                $api.addCls($event.currentTarget, 'move-active');
+            },
+            removeActive($event) {
+                $api.removeCls($event.currentTarget, 'move-active');
+            },
+            activeClick(url,$event) {
+                $api.dom('iframe').src = url;
+                $api.removeCls($api.dom('.active'), 'active');
+                $api.addCls($event.currentTarget, 'active');
+            }
+        }
+    })
+
+</script>
+</html>

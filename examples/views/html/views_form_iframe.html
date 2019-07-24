@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>views 文档</title>
+    <link rel="stylesheet" href="../css/views.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="views-content views-margin-b-15">
+    <ul class="views-list views-form-list">
+        <li class="views-list-item">
+            <div class="views-list-item-inner">
+                <div class="views-list-item-label">
+                    Text
+                </div>
+                <div class="views-list-item-input">
+                    <input type="text" placeholder="Name">
+                </div>
+            </div>
+        </li>
+        <li class="views-list-item">
+            <div class="views-list-item-inner">
+                <div class="views-list-item-label">
+                    Password
+                </div>
+                <div class="views-list-item-input">
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+        </li>
+        <li class="views-list-item">
+            <div class="views-list-item-inner">
+                <div class="views-list-item-label">
+                    Number
+                </div>
+                <div class="views-list-item-input">
+                    <input type="number" placeholder="Number">
+                </div>
+            </div>
+        </li>
+        <li class="views-list-item">
+            <div class="views-list-item-inner">
+                <div class="views-list-item-label">
+                    Radio
+                </div>
+                <div class="views-list-item-input">
+                    <label><input class="views-radio" type="radio" name="demo1" checked> 选项一</label>
+                    <label><input class="views-radio" type="radio" name="demo1"> 选项二</label>
+                </div>
+            </div>
+        </li>
+        <li class="views-list-item">
+            <div class="views-list-item-inner">
+                <div class="views-list-item-label">
+                    Switch
+                </div>
+                <div class="views-switch views-active" tapmode onclick="fnSwitch(this)">
+                    <div class="views-switch-handle"></div>
+                </div>
+
+            </div>
+        </li>
+        <li class="views-list-item">
+            <div class="views-list-item-inner">
+                <div class="views-list-item-label">
+                    Switch
+                </div>
+                <div class="views-switch views-switch-mini views-active" tapmode onclick="fnSwitch(this)">
+                    <div class="views-switch-handle"></div>
+                </div>
+
+            </div>
+        </li>
+        <li class="views-list-item">
+            <div class="views-list-item-inner">
+                <div class="views-list-item-label">
+                    Range
+                </div>
+                <div class="views-list-item-input">
+                    <div class="views-range">
+                        <label>
+                            <input type="range" class="views-range" value="0" max="100" min="1" step="1"  oninput="$api.css(this, 'background-size:'+this.value+'% 100%');"/>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="views-list-item">
+            <div class="views-list-item-inner">
+                <div class="views-list-item-label">
+                    Textarea
+                </div>
+                <div class="views-list-item-input">
+                    <label>
+                        <textarea placeholder="多文本输入框"></textarea>
+                    </label>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+<script type="text/javascript" src="../js/api.js"></script>
+<script type="text/javascript">
+    function fnSwitch(context) {
+        if ($api.hasCls(context, 'views-active')) {
+            $api.removeCls(context,'views-active')
+        } else{
+            $api.addCls(context,'views-active')
+        }
+    }
+</script>
+</html>

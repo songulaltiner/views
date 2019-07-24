@@ -1,0 +1,92 @@
+//
+// Variables
+// --------------------------------------------------
+$namespace: "views-" !default;
+$body-size: 20px !default;
+
+// Type
+// --------------------------------------------------
+$font-family-default: "PingFang SC", "Helvetica Neue", Helvetica, sans-serif !default;
+$font-size-default: .8rem !default;
+$font-weight: 500 !default;
+$font-weight-light: 400 !default;
+$line-height-default: 1.15 !default;
+
+$font-size-12: .6rem;
+$font-size-14: .7rem;
+$font-size-16: .8rem;
+$font-size-18: .9rem;
+$font-size-20: 1rem;
+
+
+// Colors
+// --------------------------------------------------
+
+// Main theme colors
+$primary-color: #9ac200 !default;
+$default-bg: #f5f5f5;
+
+// Action colors
+$default-color:  #929292 !default;
+$positive-color: #4DD865 !default;
+$negative-color: #dd524d !default;
+$warning-color: #f0ad4e !default;
+$royal-color: #8a6de9 !default;
+$grey-color:#c7c7cc !default;
+
+// Font colors
+$black-85: rgba(0,0,0,.85);
+$black-65: rgba(0,0,0,.65);
+$black-45: rgba(0,0,0,.45);
+$black-25: rgba(0,0,0,.25);
+$black-15: rgba(0,0,0,.15);
+$black-9: rgba(0,0,0,.09);
+$black-4: rgba(0,0,0,.04);
+$black-2: rgba(0,0,0,.02);
+
+$white-100: rgba(255,255,255,1);
+$white-85: rgba(255,255,255,.85);
+$white-65: rgba(255,255,255,.65);
+$white-45: rgba(255,255,255,.45);
+$white-25: rgba(255,255,255,.25);
+$white-15: rgba(255,255,255,.15);
+$white-9: rgba(255,255,255,.09);
+$white-4: rgba(255,255,255,.04);
+
+
+// Bars
+// --------------------------------------------------
+
+$bar-base-height:  2.2rem !default;
+$bar-tab-height:   2.5rem !default;
+$bar-side-spacing: .5rem !default;
+
+
+// Cards
+// --------------------------------------------------
+
+$card-bg: #fff !default;
+$card-margin:10px !default;
+$card-border-radius:2px !default;
+$card-font-size:14px !default;
+$card-media-body-margin-left:44px !default;
+$card-footer-color:#6d6d72 !default;
+
+
+// Buttons
+// --------------------------------------------------
+
+$button-font-size: .7rem !default;
+$button-default-bg: #dddddd;
+
+// Transitions
+// --------------------------------------------------
+
+$timing-fuction: cubic-bezier(.1,.5,.1,1) !default; // Inspired by @c2prods
+
+
+// Borders
+// --------------------------------------------------
+
+$border-default: .025rem solid #ddd !default;
+$border-radius: .25rem !default;

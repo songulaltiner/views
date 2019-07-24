@@ -1,0 +1,101 @@
+
+.#{$namespace}searchbar {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  height: 2.2rem;
+  overflow: hidden;
+  width: 100%;
+  background-color: #ebeced;
+  color: #9e9e9e;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  &.focus {
+    -webkit-box-pack: start;
+  }
+}
+
+.#{$namespace}searchbar-input {
+  margin: 0 0.5rem;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.7rem;
+  position: relative;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+}
+
+.#{$namespace}searchbar form {
+  width: 90%;
+}
+
+.#{$namespace}searchbar-input input {
+  color: #666666;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  height: 1.4rem;
+  line-height: normal;
+  border: 0;
+  -webkit-appearance: none;
+  font-size: 0.7rem;
+}
+
+.#{$namespace}searchbar {
+  input::-webkit-input-placeholder {
+    color: #ccc;
+  }
+  .#{$namespace}iconfont {
+    line-height: 1.4rem;
+    margin-right: 0.25rem;
+    color: #9e9e9e !important;
+  }
+  .#{$namespace}searchbar-btn {
+    font-size: 0.7rem;
+    color: #666666;
+    margin-right: -2.2rem;
+    width: 2.2rem;
+    height: 1.4rem;
+    padding-right: 0.5rem;
+    line-height: 1.4rem;
+    text-align: center;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .#{$namespace}searchbar-cancel {
+    font-size: 0.7rem;
+    color: #666666;
+    margin-right: -2.2rem;
+    width: 2.2rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+}
+.#{$namespace}searchbar-clear-btn {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #eeeeee;
+  border-radius: 50%;
+  line-height: 0.6rem;
+  text-align: center;
+  display: none;
+  .#{$namespace}iconfont {
+    font-size: 0.6rem;
+    margin: 0 auto;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.#{$namespace}searchbar .#{$namespace}searchbar-btn .#{$namespace}iconfont {
+  color: #666666;
+}

@@ -1,0 +1,18 @@
+.#{$namespace}popover {
+  position: fixed;
+  bottom: 0;
+  z-index: z("popover","popover");
+  width: 100%;
+  background-color: $default-bg;
+  border-radius: 7px;
+  .#{$namespace}list .#{$namespace}list-item-title{
+    text-align: center;
+    font-size: .9rem;
+    width: 100%;
+  }
+  .#{$namespace}list .#{$namespace}list-item-inner{
+    min-height: 2.5rem;
+  }
+
+
+}

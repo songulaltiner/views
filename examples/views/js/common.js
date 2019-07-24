@@ -1,0 +1,49 @@
+var templete = [{
+    name:'概述',
+    url:'html/views_description.html'
+},{
+    name:'常用辅助样式',
+    url:'html/views_common.html'
+},{
+    name:'导航栏',
+    url:'html/views_bar.html'
+},{
+    name:'底部导航栏',
+    url:'html/views_tabbar.html'
+},{
+    name:'Tab切换',
+    url:'html/views_tab.html'
+},{
+    name:'按钮',
+    url:'html/views_button.html'
+},{
+    name:'列表布局',
+    url:'html/views_list.html'
+},{
+    name:'提示信息条',
+    url:'html/views_tips.html'
+},{
+    name:'单/多选列表',
+    url:'html/views_select_list.html'
+},{
+    name:'底部弹出列表',
+    url:'html/views_popover.html'
+},{
+    name:'表单',
+    url:'html/views_form.html'
+},{
+    name:'卡片列表',
+    url:'html/views_card.html'
+},{
+    name:'宫格布局',
+    url:'html/views_grid.html'
+},{
+    name:'搜索框',
+    url:'html/views_search.html'
+},{
+    name:'时间轴',
+    url:'html/views_timeline.html'
+},{
+    name:'图标',
+    url:'html/views_icon.html'
+}];

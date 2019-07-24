@@ -1,0 +1,344 @@
+
+input {
+  &[type="text"], &[type="password"], &[type="search"], &[type="email"], &[type="tel"], &[type="url"], &[type="date"], &[type="datetime-local"], &[type="time"], &[type="number"] {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 2.2rem;
+    line-height: normal;
+    color: #424242;
+    font-size: 0.8rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    -webkit-user-select: text;
+    user-select: text;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
+
+select, textarea {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 2.2rem;
+  line-height: normal;
+  color: #424242;
+  font-size: 0.8rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  -webkit-user-select: text;
+  user-select: text;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+
+.#{$namespace}input {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 2.2rem;
+  line-height: normal;
+  color: $black-45;
+  font-size: 0.8rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  -webkit-user-select: text;
+  user-select: text;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.#{$namespace}radio {
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  -webkit-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: default;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color ease 0.1s;
+  transition: background-color ease 0.1s;
+}
+
+.#{$namespace}checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  -webkit-border-radius: 0.6rem;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: default;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color ease 0.1s;
+  transition: background-color ease 0.1s;
+  border-radius: 0.1rem;
+}
+
+.#{$namespace}radio {
+  &:checked, &.#{$namespace}checked {
+    background-color: $primary-color;
+    border: solid 1px $primary-color;
+    text-align: center;
+    background-clip: padding-box;
+  }
+}
+
+.#{$namespace}checkbox {
+  &:checked, &.#{$namespace}checked {
+    background-color: $primary-color;
+    border: solid 1px $primary-color;
+    text-align: center;
+    background-clip: padding-box;
+  }
+}
+
+.#{$namespace}radio {
+  &:checked:before, &.#{$namespace}checked:before {
+    content: '';
+    width: 0.5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.25rem;
+    margin-top: -0.25rem;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    z-index: 2;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.#{$namespace}checkbox {
+  &:checked:before, &.#{$namespace}checked:before {
+    content: '';
+    width: 0.5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.25rem;
+    margin-top: -0.25rem;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    z-index: 2;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.#{$namespace}radio {
+  &:checked:after, &.#{$namespace}checked:after {
+    content: '';
+    width: 0.5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.25rem;
+    margin-top: -0.25rem;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    z-index: 2;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.#{$namespace}checkbox {
+  &:checked:after, &.#{$namespace}checked:after {
+    content: '';
+    width: 0.5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.25rem;
+    margin-top: -0.25rem;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    z-index: 2;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.#{$namespace}radio {
+  &:disabled, &.#{$namespace}disabled {
+    background-color: #dddddd;
+    border: solid 1px #dddddd;
+  }
+}
+
+.#{$namespace}checkbox {
+  &:disabled, &.#{$namespace}disabled {
+    background-color: #dddddd;
+    border: solid 1px #dddddd;
+  }
+}
+
+.#{$namespace}radio {
+  &:disabled:before, &.#{$namespace}disabled:before, &:disabled:after, &.#{$namespace}disabled:after {
+    content: '';
+    width: 0.5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.25rem;
+    margin-top: -0.25rem;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    z-index: 2;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.#{$namespace}checkbox {
+  &:disabled:before, &.#{$namespace}disabled:before, &:disabled:after, &.#{$namespace}disabled:after {
+    content: '';
+    width: 0.5rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.25rem;
+    margin-top: -0.25rem;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    z-index: 2;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.#{$namespace}select {
+  position: relative;
+}
+
+.#{$namespace}select:before {
+  position: absolute;
+  top: 8px;
+  color: rgba(170, 170, 170, 0.6);
+  font-family: #{$namespace}iconfont;
+  right: 21px;
+  content: '\e581';
+}
+
+
+.#{$namespace}input-row .#{$namespace}switch {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.#{$namespace}range {
+  position: relative;
+  display: inline-block;
+
+  input[type='range'] {
+    position: relative;
+    -webkit-appearance: none !important;
+    background: -webkit-linear-gradient($primary-color, $primary-color) no-repeat #f0f0f0;
+    background-size: 0% 100%;
+
+    &::-webkit-slider-runnable-track {
+      height: 0.1rem;
+      border: 0;
+      border-radius: 2px;
+    }
+
+    &::-webkit-slider-thumb {
+      width: 1.1rem;
+      height: 1.1rem;
+      margin-top: -.5rem;
+      border-radius: 50%;
+      border: $primary-color .1rem solid;
+      background-color: #fff;
+      -webkit-appearance: none !important;
+    }
+  }
+
+  .#{$namespace}range-tip {
+    font-size: 1rem;
+    position: absolute;
+    z-index: 999;
+    top: -1.5rem;
+    width: 2.4rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #dddddd;
+    border-radius: 0.3rem;
+    background-color: #ffffff;
+  }
+}
+
+.#{$namespace}input-row .#{$namespace}range input[type='range'] {
+  width: 90%;
+  margin-left: 5%;
+}

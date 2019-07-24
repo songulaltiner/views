@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>views 文档</title>
+    <link rel="stylesheet" href="../css/views.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="views-searchbar ">
+    <div class="views-searchbar-input views-border-radius" tapmode onclick="doSearch()">
+        <i class="views-iconfont views-icon-search"></i>
+        <form action="javascript:search();">
+            <input type="search" placeholder="请输入搜索内容" id="search-input">
+        </form>
+    </div>
+    <div class="views-searchbar-cancel" tapmode>取消</div>
+</div>
+</body>
+<script type="text/javascript" src="../js/api.js"></script>
+<script type="text/javascript">
+    var searchBar = document.querySelector(".views-searchbar-input");
+    searchBar.onclick = function () {
+        document.querySelector(".views-searchbar-cancel").style.marginRight = '.5rem';
+    };
+    document.querySelector(".views-searchbar-cancel").onclick = function () {
+        this.style.marginRight = "-" + this.offsetWidth + "px";
+        document.getElementById("search-input").value = '';
+        document.getElementById("search-input").blur();
+    };
+
+    function doSearch() {
+        var searchValue = document.getElementById("search-input").value;
+        if (searchValue) {
+            alert("您输入的内容是:" + searchValue);
+        }
+    }
+</script>
+</html>
