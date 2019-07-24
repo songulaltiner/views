@@ -15,7 +15,7 @@
 npm install -g grunt-cli
 ```
 
-进入[Views](https://github.com/eclipsesource/tabris-js) 源码根目录并获取安装依赖项，然后生成:
+进入[Views](https://github.com/apicloudcom/views) 源码根目录并获取安装依赖项，然后生成:
 
 ```bash
 npm install
